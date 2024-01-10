@@ -17,8 +17,24 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif; 
+  animation: backgroundAnimation 10s infinite alternate;
 }
+
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #a19797; /* Warna latar belakang pada awal animasi */
+  }
+  50% {
+    background-color: #e9b070; /* Warna latar belakang pada pertengahan animasi */
+  }
+  100% {
+    background-color: #8d5088; /* Warna latar belakang pada akhir animasi */
+  }
+}
+
+
 
 :root {
   --main-color: #bba959;
@@ -514,7 +530,7 @@ footer {
       <span>Hello</span>
       <h1>MUHAMMAD FIKRIANSYAH</h1>
       <h2>Frontend Developer</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, impedit earum! Ad numquam mollitia dolorem nesciunt iste facere voluptas ut cupiditate error, consectetur provident unde vero eius cumque ullam perspiciatis?</p>
+      <p></p>
       <!--   contact button  -->
     </div>
 
@@ -537,7 +553,7 @@ footer {
       </div>
       <!--text-->
       <div class="about-text">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate sequi veniam inventore porro sit explicabo quod laborum quam eum. Sint doloremque veritatis fuga optio commodi officia. Veniam non nam provident.</p>
+        <p></p>
         <!--some information-->
         <div class="information">
           <!--box1-->
@@ -557,7 +573,8 @@ footer {
           </div>
         </div>
         <!--   button  -->
-        <a href="" class="btn">Download CV</a>
+        <a href="CV (1).pdf" class="btn donwloadPdf()">Download CV</a>
+        
       </div>
 
     </div>
@@ -692,10 +709,10 @@ footer {
         <img src="WhatsApp Image 2024-01-07 at 03.27.18.jpeg" alt="">
       </div>
       <div class="portfolio-img">
-        <img src="https://i.pinimg.com/564x/f2/33/e3/f233e318d7280ab4816de9f01e08abf0.jpg" alt="">
+        <img src="" alt="">
       </div>
       <div class="portfolio-img">
-        <img src="https://i.pinimg.com/564x/ad/5b/bb/ad5bbbdc8b51a35e08a5c449cbdd8e3a.jpg" alt="">
+        <img src="" alt="">
       </div>
 
     </div>
@@ -757,6 +774,12 @@ darkmode.onclick = () => {
     darkmode.classList.replace('fa-star', 'fa-moon');
     document.body.classList.remove('active');
   }
+}
+
+function btndownloadpf(){
+  var pdfURL="";
+
+
 }
 </script>
 </html>
