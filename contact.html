@@ -388,38 +388,7 @@ form textarea {
     --big-font: 2.4rem;
     --medium-font: 1.2rem;
   }
-  header {
-    padding: 11px 4%;
-  }
-  #menu-icon {
-    display: initial;
-    color: var(--text-color);
-  }
-  header .navbar {
-    position: absolute;
-    top: -500px;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--bg-color);
-    box-shadow: 0 4px 4px rgba(0 0 0 / 10%);
-    transition: 0.2s ease;
-    text-align: center;
-  }
-  .navbar.active {
-    top: 100%;
-  }
-  .navbar a {
-    padding: 1.5rem;
-    display: block;
-    background-color: var(--bg-color);
-  }
-  #darkmode {
-    position: absolute;
-    top: 1.4rem;
-    right: 2rem;
-  }
+ 
   .home {
     grid-template-columns: 0.5fr 3fr;
   }
@@ -524,234 +493,26 @@ footer {
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">About me</a>
+            <a class="nav-link" href="about.html">About me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Skills</a>
+            <a class="nav-link" href="skills.html">Skills</a>
           </li>
-          <a class="nav-link" href="">Services</a>
+          <a class="nav-link" href="services.html">Services</a>
         </li>
-        <a class="nav-link" href="">Portfolio</a>
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
       </li>
-      <a class="nav-link" href="">Contact</a>
+      <a class="nav-link" href="contact.html">Contact</a>
     </li>
         </ul>
       </div>
     </div>
   </nav>
 
-
-  
-
-  <!--              HOME SECTION              -->
-
-  <section class="home" id="home">
-    <!--   social icon   -->
-    <div class="social">
-      <a href=""><i class="fa-brands fa-github"></i></a>
-      <a href=""><i class="fa-brands fa-dribbble"></i></a>
-      <a href=""><i class="fa-brands fa-behance"></i></a>
-    </div>
-
-    <!--   home image   -->
-    <div class="home-img">
-      <img src="WhatsApp Image 2024-01-07 at 03.07.43.jpeg" alt="">
-    </div>
-    <!--   home content   -->
-    <div class="home-text">
-      <span>Hello</span>
-      <h1>MUHAMMAD FIKRIANSYAH</h1>
-      <h2>Frontend Developer</h2>
-      <p></p>
-      <!--   contact button  -->
-    </div>
-
-  </section>
-
-  <!--              ABOUT SECTION              -->
-
-  <section class="about" id="about">
-    <!--   headings  -->
-    <div class="heading">
-      <h2>About Me</h2>
-      <span>Introduction</span>
-    </div>
-
-    <!--   about content  -->
-    <div class="about-container">
-      <!--image-->
-      <div class="about-img">
-        <img src="WhatsApp Image 2024-01-07 at 03.13.11.jpeg" alt="">
-      </div>
-      <!--text-->
-      <div class="about-text">
-        <p></p>
-        <!--some information-->
-        <div class="information">
-          <!--box1-->
-          <div class="info-box">
-            <i class="fa-solid fa-user"></i>
-            <span>Muhammad Fikriansyah</span>
-          </div>
-          <!--box2-->
-          <div class="info-box">
-            <i class="fa-solid fa-phone"></i>
-            <span>+62 89515463046</span>
-          </div>
-          <!--box3-->
-          <div class="info-box">
-            <i class="fa-solid fa-envelope"></i>
-            <span>fikriansyahmuhammad664@gmail.com</span>
-          </div>
-        </div>
-        <!--   button  -->
-        <a href="CV (1).pdf" class="btn donwloadPdf()">Download CV</a>
-        
-      </div>
-
-    </div>
-  </section>
-
-  <!--              SKILLS SECTION              -->
-
-  <section class="skills" id="skills">
-    <!--   headings  -->
-    <div class="heading">
-      <h2>Skills</h2>
-      <span>my skills</span>
-    </div>
-
-    <!--   skill content  -->
-    <div class="skills-container">
-      <div class="bars">
-        <div class="bars-box">
-          <h3>HTML</h3>
-          <span></span>
-          <div class="light-bar"></div>
-          <div class="percent-bar html-bar"></div>
-        </div>
-        <div class="bars-box">
-          <h3>CSS/tailwind, bootstrap</h3>
-          <span></span>
-          <div class="light-bar"></div>
-          <div class="percent-bar css-bar"></div>
-        </div>
-        <div class="bars-box">
-          <h3>JavaScript</h3>
-          <span></span>
-          <div class="light-bar"></div>
-          <div class="percent-bar js-bar"></div>
-        </div>
-        <div class="bars-box">
-          <h3>React, Laravel, git, github, spyder</h3>
-          <span></span>
-          <div class="light-bar"></div>
-          <div class="percent-bar react-bar"></div>
-        </div>
-         <div class="bars-box">
-          <h3>python, jira, katalon, php</h3>
-          <span></span>
-          <div class="light-bar"></div>
-          <div class="percent-bar react-bar"></div>
-        </div>
-        <div class="bars-box">
-          <h3>numpy, pandas, matplotlib, pivot</h3>
-          <span></span>
-          <div class="light-bar"></div>
-          <div class="percent-bar react-bar"></div>
-        </div>
-        <div class="bars-box">
-          <h3>SQL server, db mysql</h3>
-          <span></span>
-          <div class="light-bar"></div>
-          <div class="percent-bar react-bar"></div>
-        </div>
-      </div>
-
-
-      <!--image-->
-      <div class="skills-img">
-        <img src="WhatsApp Image 2024-01-07 at 03.13.34.jpeg" alt="">
-      </div>
-
-    </div>
-  </section>
-
-  <!--              SERVICE SECTION              -->
-
-  <section class="services" id="services">
-    <!--   headings  -->
-    <div class="heading">
-      <h2>Services</h2>
-      <span>our service</span>
-    </div>
-
-    <!--   service content  -->
-    <div class="services-content">
-      <!--box1-->
-      <div class="services-box">
-        <i class="fa-solid fa-code"></i>
-        <h3>Frontend</h3>
-        <a href="">learn more</a>
-      </div>
-      <!--box2-->
-      <div class="services-box">
-        <i class="fa-solid fa-server"></i>
-        <h3>DSA</h3>
-        <a href="">learn more</a>
-      </div>
-      <!--box3-->
-      <div class="services-box">
-        <i class="fa-solid fa-brush"></i>
-        <h3>Design</h3>
-        <a href="">learn more</a>
-      </div>
-      <!--box4-->
-      <div class="services-box">
-        <i class="fa-brands fa-wordpress"></i>
-        <h3>Wordpress Developer</h3>
-        <a href="">learn more</a>
-      </div>
-    </div>
-
-  </section>
-
-  <!--              PORTFOLIO SECTION              -->
-
-  <section class="portfolio" id="portfolio">
-    <!--   headings  -->
-    <div class="heading">
-      <h2>Portfolio</h2>
-      <span></span>
-    </div>
-
-    <!--   portfolio content  -->
-    <div class="portfolio-content">
-
-      <div class="portfolio-img">
-        <img src="WhatsApp Image 2024-01-07 at 03.13.48.jpeg" alt="">
-      </div>
-      <div class="portfolio-img">
-        <img src="WhatsApp Image 2024-01-07 at 03.26.45.jpeg" alt="">
-      </div>
-      <div class="portfolio-img">
-        <img src="WhatsApp Image 2024-01-07 at 03.27.03.jpeg" alt="">
-      </div>
-      <div class="portfolio-img">
-        <img src="WhatsApp Image 2024-01-07 at 03.27.18.jpeg" alt="">
-      </div>
-      <div class="portfolio-img">
-        <img src="" alt="">
-      </div>
-      <div class="portfolio-img">
-        <img src="" alt="">
-      </div>
-
-    </div>
-  </section>
+ 
 
   <!--              CONTACT FORM              -->
 
@@ -790,7 +551,7 @@ footer {
 
   themeButton.addEventListener('click', () => {
     // Toggle background color on button click
-    document.body.style.backgroundColor = isBackgroundChanged ? '#FFFFFF' : ' #272424';
+    document.body.style.backgroundColor = isBackgroundChanged ? '#FFFFFF' : ' #000000';
     isBackgroundChanged = !isBackgroundChanged;
   });
 </script>
