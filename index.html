@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fontawesome">
+    <link rel="" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
     <title>Document</title>
 </head>
 
@@ -18,30 +21,20 @@
   list-style: none;
   text-decoration: none;
   font-family: 'Inter', sans-serif; 
-  animation: backgroundAnimation 10s infinite alternate;
+  
 }
 
 
-@keyframes backgroundAnimation {
-  0% {
-    background-color: #a19797; /* Warna latar belakang pada awal animasi */
-  }
-  50% {
-    background-color: #e9b070; /* Warna latar belakang pada pertengahan animasi */
-  }
-  100% {
-    background-color: #8d5088; /* Warna latar belakang pada akhir animasi */
-  }
-}
+
 
 
 
 :root {
   --main-color: #bba959;
-  --bg-color: #584e4e;
-  --text-color: #ffffff;
+  
+  --text-color: #bb2323;
   --hover: #000000;
-  --background: #c1b0db;
+  --background: #7950b8;
   
   --big-font: 3.2rem;
   --medium-font: 1.8rem;
@@ -64,7 +57,7 @@ section {
 /* theme */
 body.active {
   --main-color: #DD5353;
-  --bg-color: #000;
+  --bg-color: 
   --text-color: #FF7D7D;
   --hover: #FF6464;
 }
@@ -123,7 +116,7 @@ body.active {
 .btn {
   display: inline-block;
   background-color: var(--main-color);
-  color: #fff;
+  color: #fff4f4;
   padding: 0.7rem 1.3rem;
   border-radius: 0.5rem;
 }
@@ -503,10 +496,52 @@ footer {
 	padding: 0.5em;
   z-index: 40;
 }
+
+#themeButton {   
+  justify-content: end;
+  background-color: #ffffffd5; /* Button background color */
+  color: #272424; /* Button text color */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
 </style>
 
 
 <body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"> <button id="themeButton">
+
+        <i class="bi bi-moon-stars-fill"></i> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+          </svg>
+      </button></a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Skills</a>
+          </li>
+          <a class="nav-link" href="">Services</a>
+        </li>
+        <a class="nav-link" href="">Portfolio</a>
+      </li>
+      <a class="nav-link" href="">Contact</a>
+    </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 
   
@@ -745,41 +780,19 @@ footer {
   <div class="copyright">
     <p>Muhammad fikriansyah | All Right Reserved</p>
   </div>
-
-</body>
-
 <footer>
   Responsive Portfolio Website 2024 
 </footer>
-
 </body>
 <script>
-    let header = document.querySelector("header");
-let menu = document.querySelector("#menu-icon");
-let navbar = document.querySelector(".navbar");
+  const themeButton = document.getElementById('themeButton');
+  let isBackgroundChanged = false;
 
-menu.onclick = () => {
-  navbar.classList.toggle("active");
-}
-
-// theme
-let darkmode = document.querySelector("#darkmode");
-
-darkmode.onclick = () => {
-  if ( darkmode.classList.contains('fa-moon')) {
-    darkmode.classList.replace('fa-moon', 'fa-star');
-    document.body.classList.add('active');
-  }
-  else {
-    darkmode.classList.replace('fa-star', 'fa-moon');
-    document.body.classList.remove('active');
-  }
-}
-
-function btndownloadpf(){
-  var pdfURL="";
-
-
-}
+  themeButton.addEventListener('click', () => {
+    // Toggle background color on button click
+    document.body.style.backgroundColor = isBackgroundChanged ? '#FFFFFF' : ' #272424';
+    isBackgroundChanged = !isBackgroundChanged;
+  });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
